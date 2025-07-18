@@ -1,4 +1,4 @@
-from functions_sp import coefs, total_ins, condsiniciais, execute_w, row, pc_finder
+from functions import coefs, total_ins, condsiniciais, execute_w, row, pc_finder
 import csv
 from os import mkdir, remove
 import numpy as np
