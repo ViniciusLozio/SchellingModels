@@ -1,4 +1,4 @@
-# A Mean Field Approach for Extended Schelling Models
+# A Mean-Field Approach for Extended Schelling Models
 Python project that implements a mean‑field approach to derive differential equations that simulate extended Schelling models and generate iterative time‑series data for the most important parameters.
 
 This project was carried out over the course of my undergraduate studies in physics as a scientific initiation project under the supervision of Professor Dr. André de Pinho Vieira. It was completed in 2024 and provided several novel insights into the study of Schelling models, such as delineating the limits of a mean‑field approach and demonstrating the existence of phase transitions when specific parameters are varied.
@@ -7,7 +7,10 @@ This project was carried out over the course of my undergraduate studies in phys
 
 In 1969, the American economist and 2005 Nobel Prize laureate in Economics, Thomas Schelling (1921–2016), published the article “Models of Segregation” [1], in which—aiming to study racial segregation in American cities—he introduced one of the first mathematical models of social agents. The model consisted of two types of cells occupying predefined sites on a lattice; these cells could swap positions to increase their “satisfaction”, quantified by the number of like‑type cells in their eight‑cell Moore neighborhood.
 
-<img width="414" height="195" alt="schelling" src="https://github.com/user-attachments/assets/d559e7cc-6529-4eef-a231-e091b9a848f2" />
+![Schelling Diagram](https://github.com/user-attachments/assets/d559e7cc-6529-4eef-a231-e091b9a848f2)
+
+*Figure 1. Schelling, T.C, 1974.*
+
 
 
 ## Extendind Schelling Models
@@ -22,7 +25,9 @@ The model in this project works as follows:
   For example, the rule 10001 means agents are satisfied with 0 or 4 same-type neighbors (s₀ = s₄ = 1) and dissatisfied with 1, 2, or 3 same-type neighbors (s₁ = s₂ = s₃ = 0). In this study the same satisfaction rule was applied to both agent types.
 - Dynamics proceed in discrete steps: at each step, a randomly chosen dissatisfied type-0 agent swaps positions with a randomly chosen dissatisfied type-1 agent, even if both remain dissatisfied after the swap.
 
- <img width="222" height="402" alt="model" src="https://github.com/user-attachments/assets/df4cbf7c-e325-401f-bb6a-6a9bb0781dfa" />
+![Neighbourhood](https://github.com/user-attachments/assets/df4cbf7c-e325-401f-bb6a-6a9bb0781dfa) 
+
+*Figure 2: Possible configurations for a Von Neumann neighbourhood with rules of the class s₀ s₁10 s₄.*
 
 
 ## The Mean Field Approach
