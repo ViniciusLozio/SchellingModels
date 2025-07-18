@@ -62,7 +62,7 @@ for rule in regras:
             dt = np.sqrt(2)*1E-3  # Time step dt
             tmax = 20  # Maximum execution time
 
-            print(f"\n regra: {regra1}", f"| r1: {r1:.12f}\n")
+            print(f"\n rule: {regra1}", f"| r1: {r1:.12f}\n")
 
             condsiniciais(nviz, r1, f)
             dy = f.flatten().copy()
@@ -97,13 +97,13 @@ for rule in regras:
                 end.write(
                     f"Dinamica Interrompida: {parada} | t = {T} | ρu0 = {total_ins_s[0]:.14f} | "
                     f"ρu1 = {total_ins_s[1]:.14f} | ρu: {total_ins_s[0] * r0 + total_ins_s[1] * r1:.14f}\n")
-                end.write(f"Tipo 0: {f[0]}\n")
-                end.write(f"Tipo 1: {f[1]}\n")
+                end.write(f"Type 0: {f[0]}\n")
+                end.write(f"Type 1: {f[1]}\n")
 
         print("")
         print(f[0], soma[0])
         print(f[1], soma[1])
-        print(f"\nT: {T:.10f}", f"| Parada: {parada}, "f"| regra: {regra1}",
+        print(f"\nT: {T:.10f}", f"| Stop: {parada}, "f"| rule: {regra1}",
               f"| r1: {r1:.10f}",
               f"| Ins 0: {total_ins_s[0]:.16f}",
               f"| Ins 1: {total_ins_s[1]:.16f} | Total Ins: "
