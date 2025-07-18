@@ -1,5 +1,5 @@
 import csv
-from functions_sp import coefs, total_ins, row, derivs, condsiniciais
+from functions import coefs, total_ins, row, derivs, condsiniciais
 from os import mkdir, remove
 from math import comb, floor
 from random import uniform
