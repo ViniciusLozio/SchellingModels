@@ -1,4 +1,4 @@
-# SchellingModels
+# A Mean Field Approach for Extended Schelling Models
 Python project that implements a mean‑field approach to derive differential equations that simulate extended Schelling models and generate iterative time‑series data for the most important parameters.
 
 This project was carried out over the course of my undergraduate studies in physics as a scientific initiation project under the supervision of Professor Dr. André de Pinho Vieira. It was completed in 2024 and provided several novel insights into the study of Schelling models, such as delineating the limits of a mean‑field approach and demonstrating the existence of phase transitions when specific parameters are varied.
