@@ -5,7 +5,7 @@ This project was carried out over the course of my undergraduate studies in phys
 
 ## The Schelling Models
 
-In 1969, the American economist and 2005 Nobel Prize laureate in Economics, Thomas Schelling (1921–2016), published the article “Models of Segregation” [1], in which—aiming to study racial segregation in American cities—he introduced one of the first mathematical models of social agents. The model consisted of two types of cells occupying predefined sites on a lattice; these cells could swap positions to increase their “satisfaction”, quantified by the number of like‑type cells in their eight‑cell Moore neighborhood.
+In 1969, the American economist and 2005 Nobel Prize laureate in Economics, Thomas Schelling (1921–2016), published the article [Models of Segregation [1]](https://www.jstor.org/stable/1823701), in which, aiming to study racial segregation in American cities, he introduced one of the first mathematical models of social agents. The model consisted of two types of cells occupying predefined sites on a lattice; these cells could swap positions to increase their “satisfaction”, quantified by the number of like‑type cells in their eight‑cell Moore neighborhood.
 
 ![Schelling Diagram](https://github.com/user-attachments/assets/d559e7cc-6529-4eef-a231-e091b9a848f2)
 
@@ -15,7 +15,7 @@ In 1969, the American economist and 2005 Nobel Prize laureate in Economics, Thom
 
 ## Extendind Schelling Models
 
-Since Schelling's article, studies have been conducted on Schelling models, exploring different dynamics, neighbourhoods and cells fractions. 
+Since Schelling's article, several studies have been conducted on Schelling models, exploring different dynamics, neighbourhoods and cells fractions. 
 
 The model in this project works as follows:
 
@@ -41,17 +41,26 @@ The core element of the code is the computation of five 4×4 matrices. The calcu
 From these matrices, a set of differential equations is formulated, allowing for the numerical computation of the rate of change over time of ρₖ, the fraction of agents of a given type with k neighbors of type 1 in their neighborhood. Through numerical integration, like Runge-Kutta method, one can then analyze the evolution of these fractions as well as the total number of dissatisfied agents of each type.
 
 
-## Project Structure
+## Project Files
 
-### Directories:
-  - Python: Python project
-  - Misc: Reports and data analysis
+- main.py: simulates the dynamic once for a specific input rule and fixed initial cell fractions;
+- function.py: contains most of the main math based functions used;
+- pcs.py: simulates the dynamic several times, changing the initial cell fractions to find critical points of phase transitions;
+- deviations.py: simulates the dynamic several times, changing the initial cell fractions to investigate the dynamic when initial cell fractions are close to critical points.
 
 
-.bi*: Scripts with non‑vectorized functions for integration using the built‑in RK4 method. (Does not use NumPy or SciPy; compatible with PyPy)
+## Bibliography:
 
- - MAIN_bi.py: Executes the dynamics using the built‑in RK4 integrator.
+[1] SCHELLING, Thomas. Models of Segregation. The American Economic
+Review, Vol. 59, No. 2, 1969, pp. 488-493;
 
- - functions_bi.py: Utility functions used by the non‑vectorized scripts.
+[2] André P Vieira et al. Dynamics of extended Schelling models J. Stat. Mech.
+(2020) 013212
 
-.sp*: Scripts with vectorized functions leveraging NumPy and SciPy for integration via SciPy’s solve_ivp.
+[3] André P Vieira et al. Phase transitions in a conservative game of life. PHYSICAL
+REVIEW, E 103, (2021) 012132
+
+
+
+
+
