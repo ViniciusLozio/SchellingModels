@@ -21,8 +21,8 @@ The model in this project works as follows:
 - Satisfaction rules are encoded as a binary string s₀ s₁ s₂ s₃ s₄, where each sₖ is a Boolean indicating satisfaction (s = 1) or dissatisfaction (s = 0) when there are k same-type neighbors.
   For example, the rule 10001 means agents are satisfied with 0 or 4 same-type neighbors (s₀ = s₄ = 1) and dissatisfied with 1, 2, or 3 same-type neighbors (s₁ = s₂ = s₃ = 0). In this study the same satisfaction rule was applied to both agent types.
 - Dynamics proceed in discrete steps: at each step, a randomly chosen dissatisfied type-0 agent swaps positions with a randomly chosen dissatisfied type-1 agent, even if both remain dissatisfied after the swap.
--
-- <img width="222" height="402" alt="model" src="https://github.com/user-attachments/assets/df4cbf7c-e325-401f-bb6a-6a9bb0781dfa" />
+
+ <img width="222" height="402" alt="model" src="https://github.com/user-attachments/assets/df4cbf7c-e325-401f-bb6a-6a9bb0781dfa" />
 
 
 ## The Mean Field Approach
