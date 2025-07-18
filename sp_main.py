@@ -1,5 +1,5 @@
 import csv
-from functions_sp import coefs, total_ins, row, derivs, condsiniciais
+from functions import coefs, total_ins, row, derivs, condsiniciais
 import numpy as np
 import scipy as sp
 
